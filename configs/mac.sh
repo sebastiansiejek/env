@@ -4,6 +4,7 @@ brew install \
   nvm
 
 brew install --cask \
+  iterm2 \
   webstorm \
   visual-studio-code \
   google-chrome \
