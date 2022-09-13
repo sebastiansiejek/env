@@ -1,5 +1,4 @@
 brew install \
-  git \
   fig \
   node \
   nvm
