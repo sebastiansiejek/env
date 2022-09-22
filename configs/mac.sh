@@ -1,9 +1,7 @@
 brew install \
-  fig \
   node \
-  nvm
-
-brew install --cask \
+  nvm \
+  fig \
   iterm2 \
   webstorm \
   visual-studio-code \
@@ -19,8 +17,7 @@ brew install --cask \
   alt-tab \
   numi \
   rectangle \
-  tableplus \
-  filezilla
+  tableplus
 
 #terminal
 git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
