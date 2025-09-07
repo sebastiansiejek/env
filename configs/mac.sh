@@ -7,7 +7,8 @@ brew install volta \
   gh \
   ngrok \
   stats \
-  httpie
+  httpie \
+  zsh-autosuggestions
 brew install --cask \
   iterm2 \
   phpstorm \
@@ -45,7 +46,8 @@ brew install --cask \
 
 #terminal
 git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
-echo 'source "$HOME/.slimzsh/slim.zsh"' >> ~/.zshrc
+echo 'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+
 
 # save screenshots as jpeg (default png)
 defaults write com.apple.screencapture type jpeg; killall SystemUIServer
