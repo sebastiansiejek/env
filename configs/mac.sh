@@ -1,28 +1,51 @@
-brew install \
-  node \
-  nvm \
-  fig \
+brew update && brew upgrade
+
+# --- Developer Tools ---
+echo "💻 Installing Developer Tools..."
+brew install volta \
+  git \
+  gh \
+  ngrok \
+  stats \
+  httpie
+brew install --cask \
   iterm2 \
-  webstorm \
+  phpstorm \
   visual-studio-code \
-  google-chrome \
+  insomnia \
   docker \
-  postman \
+  responsively
+
+# --- Browsers ---
+echo "🌐 Installing Browsers..."
+brew install --cask \
+  arc \
+  firefox@developer-edition
+
+# --- Productivity & Communication ---
+echo "📬 Installing Productivity & Communication apps..."
+brew install --cask \
   slack \
-  firefox \
-  spark \
-  spotify \
-  raycast \
   notion \
+  raycast \
+  timecamp \
+  chatgpt
+
+# --- Media ---
+echo "🎵 Installing Media apps..."
+brew install --cask spotify
+
+# --- System Utilities ---
+echo "🛠 Installing System Utilities..."
+brew install --cask \
   alt-tab \
-  numi \
   rectangle \
-  tableplus
+  logi-options+ \
+  tunnelblick
 
 #terminal
 git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
-source "$HOME/.slimzsh/slim.zsh"
-source <(curl -Ls fig.io/install)
+echo 'source "$HOME/.slimzsh/slim.zsh"' >> ~/.zshrc
 
 # save screenshots as jpeg (default png)
-defaults write com.apple.screencapture type jpg; killall SystemUIServer
+defaults write com.apple.screencapture type jpeg; killall SystemUIServer
