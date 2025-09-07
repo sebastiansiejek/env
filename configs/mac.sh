@@ -9,7 +9,8 @@ brew install volta \
   stats \
   httpie \
   zsh-autosuggestions \
-  fzf
+  fzf \
+  ffmpeg
 brew install --cask \
   iterm2 \
   phpstorm \
