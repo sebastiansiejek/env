@@ -8,7 +8,8 @@ brew install volta \
   ngrok \
   stats \
   httpie \
-  zsh-autosuggestions
+  zsh-autosuggestions \
+  fzf
 brew install --cask \
   iterm2 \
   phpstorm \
