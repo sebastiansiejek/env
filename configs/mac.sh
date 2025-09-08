@@ -6,7 +6,6 @@ brew install volta \
   git \
   gh \
   ngrok \
-  stats \
   httpie \
   zsh-autosuggestions \
   fzf \
