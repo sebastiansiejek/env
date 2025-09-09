@@ -22,7 +22,7 @@ brew install --cask \
 echo "🌐 Installing Browsers..."
 brew install --cask \
   arc \
-  firefox@developer-edition
+  zen
 
 # --- Productivity & Communication ---
 echo "📬 Installing Productivity & Communication apps..."
