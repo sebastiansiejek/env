@@ -28,6 +28,7 @@ brew install --cask \
 echo "📬 Installing Productivity & Communication apps..."
 brew install --cask \
   slack \
+  discrod \
   notion \
   raycast \
   timecamp \
