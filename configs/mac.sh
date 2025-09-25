@@ -46,12 +46,15 @@ brew install --cask \
   logi-options+ \
   tunnelblick
 
-#terminal
+# terminal
 git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
 echo 'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
+
+# pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # save screenshots as jpeg (default png)
 defaults write com.apple.screencapture type jpeg; killall SystemUIServer
